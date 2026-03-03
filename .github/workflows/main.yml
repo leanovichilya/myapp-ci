@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run tests
-        run: echo "Running tests... OK"
+        run: exit 1
 
   build:
     runs-on: ubuntu-latest
