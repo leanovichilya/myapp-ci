@@ -11,9 +11,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Say hello
-        run: echo "Hello from CI!"
-
-      - name: Show files
-        run: ls -la
-
+      - name: Build Docker image
+        run: docker build -t myapp .
